@@ -52,6 +52,7 @@ public class BallMovementSol : MonoBehaviour {
 
 	}
 
+    // This is called every frame
 	void Update () {
 		LimitSpeed ();
 		AdjustAngle ();

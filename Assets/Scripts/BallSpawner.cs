@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallSpawnerSol : MonoBehaviour {
+public class BallSpawner : MonoBehaviour {
 
     // the prefab to instantiate
     public GameObject ballPrefab;
@@ -11,13 +11,12 @@ public class BallSpawnerSol : MonoBehaviour {
     void Start()
     {
         // Spawn a ball when the game starts
-        SpawnBall();   
+        SpawnBall();
     }
 
     public void SpawnBall()
     {
         // Instantiate a new ball at the position of the spawner object
         // Hint: https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
-        Instantiate(ballPrefab, transform.position, Quaternion.identity);
     }
 }
